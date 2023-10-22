@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Optimus</title>
+</head>
+
+<body class="dark">
+    <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="sidebar_logo">
+            
+            <img src="img/Tablet.svg" alt="Tablet">
+        </div>
+
+        <div class="sidebar_menu">
+            <nav>
+                <li>
+                    <a href="#" class="active">
+                        <img src="img/home.svg" alt="home">
+                        <span>home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/dollar-sign.svg" alt="dollar-sign">
+                        <span>bank</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/list.svg" alt="Pipeline">
+                        <span>Pipeline</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/users.svg" alt="users">
+                        <span>Team</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <img src="img/map.svg" alt="map">
+                        <span>Install Map</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/zap.svg" alt="zap">
+                        <span>Blitz</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/users.svg" alt="">
+                        <span>The League</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/user-plus.svg" alt="">
+                        <span>Recruitment</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/shield.svg" alt="">
+                        <span>Armory</span>
+                    </a>
+                </li>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="main_wrapper">
+        <header>
+            <div class="pro_flex">
+                <div class="logo">
+                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"><i class="bi bi-list"></i></a>
+                    <a href="#"><img src="img/Tablet.svg" alt=""></a>
+                    
+                </div>
+
+                <div class="profile">
+                    <div class="profil_info">
+                        <ul>
+                            <li class="ball"><a href="#"><img src="img/bell.png" alt=""><span>6</span></a></li>
+                            <!-- <li>
+                                <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><img src="img/profile.png" class="rounded-circle" alt=""></a>
+                            34</li> -->
+                        </ul>
+                    </div>
+    
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false"><img src="img/profile.png" class="rounded-circle" alt=""></a>
+                        <div class="profile_2 dropdown-menu">
+                            <div class="admin">
+                                <img src="img/profile.png" class="rounded-circle" alt="">
+                                <h4>Alex Smith <span>CEO</span></h4>
+                            </div>
+                            <ul aria-labelledby="dropdownMenuButton1">
+                                <li><i class="bi bi-person"></i><a href="#">Profile</a></li>
+                                <li><i class="bi bi-box-arrow-right"></i><a href="#">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <div class="name_op">
+                        <h4>Good morning, Alex</h4>
+                        <p>Here are your sales updates for August</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="drop_mon">
+                        <div class="switches-container">
+                            <input type="radio" id="switchMonthly" name="switchPlan" value="Monthly"
+                                checked="checked" />
+                            <input type="radio" id="switchYearly" name="switchPlan" value="Yearly" />
+                            <label for="switchMonthly">Personal</label>
+                            <label for="switchYearly">Division</label>
+                            <div class="switch-wrapper">
+                                <div class="switch">
+                                    <div>Personal</div>
+                                    <div>Division</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="cta dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">Month</button>
+                                <div class="dropdown-menu">
+                                    <form  action="/action_page.php">
+                                         <label for="html">Day</label>
+                                          <input type="radio" id="html" name="fav_language" value="HTML">
+                                          <label for="css">Month</label>
+                                          <input type="radio" id="css" name="fav_language" value="CSS">
+                                          <label for="javascript">Quarter</label>
+                                          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                                         <label for="javascript">Year</label>
+                                          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                                        </form>
+                                </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="row">
+                <div class="col-12 col-md-3 col-lg-3">
+                    <div class="dash_widget">
+                        <div class="dash_widgetimg">
+                            <span><img src="img/mdi_deal.svg" alt=""></span>
+                            <div class="dropdown input_list">
+                                <a href="#" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false"><i class="bi bi-three-dots"></i></a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="" href="#">Action </a></li>
+                                    <li><a class="" href="#">Another action</a></li>
+                                    <li><a class="" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="count">
+                            <h5>71 <span>Deals</span></h5>
+                            <div class="persent">
+                                <span><i class="bi bi-arrow-up-short"></i></span>
+                                <h4>+15%</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3 col-lg-3">
+                    <div class="dash_widget">
+                        <div class="dash_widgetimg">
+                            <span><img src="img/material-symbols_solar-power-rounded.svg" alt=""></span>
+                            <div class="dropdown input_list">
+                                <a href="#" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false"><i class="bi bi-three-dots"></i></a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="" href="#">Action</a></li>
+                                    <li><a class="" href="#">Another action</a></li>
+                                    <li><a class="" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="count">
+                            <h5>55 <span>Installs</span></h5>
+                            <div class="persent">
+                                <span><i class="bi bi-arrow-up-short"></i></span>
+                                <h4>+15%</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3 col-lg-3">
+                    <div class="dash_widget">
+                        <div class="dash_widgetimg">
+                            <span><img src="img/tdesign_money.svg" alt=""></span>
+                            <div class="dropdown input_list">
+                                <a href="#" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false"><i class="bi bi-three-dots"></i></a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="" href="#">Action</a></li>
+                                    <li><a class="" href="#">Another action</a></li>
+                                    <li><a class="" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="count">
+                            <h5>$23K <span>Pipeline Value</span></h5>
+                            <div class="persent">
+                                <span><i class="bi bi-arrow-up-short"></i></span>
+                                <h4>+15%</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3 col-lg-3">
+                    <div class="dash_widget">
+                        <div class="dash_widgetimg">
+                            <span><img src="img/x-octagon.svg" alt=""></span>
+                            <div class="dropdown input_list">
+                                <a href="#" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false"><i class="bi bi-three-dots"></i></a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="" href="#">Action</a></li>
+                                    <li><a class="" href="#">Another action</a></li>
+                                    <li><a class="" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="count">
+                            <h5>3 <span>On hold</span></h5>
+                            <div class="persent">
+                                <span><i class="bi bi-arrow-up-short"></i></span>
+                                <h4>+15%</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="goal dash_widget hg">
+                        <div class="numbers">
+                            <h4>12/10</h4>
+                        </div>
+
+                        <h2>Your Goal</h2>
+                        <p>Clean Deals</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-8 col-lg-9">
+                    <div class="dash_widget hg">
+                        <div class="cle12">
+                            <h3>Clean Deals</h3>
+                            <a href="#" class="dot"><i class="bi bi-three-dots"></i></a>
+                        </div>
+                        <figure class="highcharts-figure">
+                            <div id="container"></div>
+                        </figure>
+
+                        <div class="ld-form">
+                            <div class="ld-row">
+                                <label class="ld-label">
+                                    Enable Polling
+                                </label>
+                                <input type="checkbox" checked="checked" id="enablePolling" />
+                            </div>
+                            <div class="ld-row">
+                                <label class="ld-label">
+                                    Polling Time (Seconds)
+                                </label>
+                                <input class="ld-time-input" type="number" value="2" id="pollingTime" />
+                            </div>
+                            <div class="ld-row">
+                                <label class="ld-label">
+                                    CSV URL
+                                </label>
+                                <input class="ld-url-input" type="text" id="fetchURL" />
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-9">
+                    <div class="dash_widget">
+                        <div class="wigt_table rg">
+                            <div class="dropdown input_list">
+                                <button class="cta dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Setter Leaderboards</button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="">
+                                    <li><a class="" href="#">Action</a></li>
+                                    <li><a class="" href="#">Another action</a></li>
+                                    <li><a class="" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <div class="table-responsive">
+                                <div class="Table owl-carousel owl-theme">
+                                    <div class="our-item">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Place</th>
+                                                    <th scope="col">Team</th>
+                                                    <th scope="col" class="text-center">Deals</th>
+                                                    <th scope="col" class="text-center">Installs</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="wt" scope="row">1</th>
+                                                    <td>
+                                                        <div class="td-content customer-name">
+                                                            <img src="img/emily-taylor.jpg" alt="">
+                                                            <span>Emily Taylor</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="wt120 text-center">30</td>
+                                                    <td class="wt text-center ch">23</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>
+                                                        <div class="td-content customer-name">
+                                                            <img src="img/emily-taylor.jpg" alt="">
+                                                            <span>Jonah Hills</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">22</td>
+                                                    <td class="text-center ch">20</td>
+                                                </tr>
+
+                                                <tr class="table-active">
+                                                    <th scope="row">3</th>
+                                                    <td>
+                                                        <div class="td-content customer-name">
+                                                            <img src="img/emily-taylor.jpg" alt="">
+                                                            <span>Janice Williams</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">21</td>
+                                                    <td class="text-center ch">19</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">8</th>
+                                                    <td>
+                                                        <div class="td-content customer-name">
+                                                            <img src="img/emily-taylor.jpg" alt="">
+                                                            <span>Alex Smith (You)</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">16</td>
+                                                    <td class="text-center ch">12</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="our-item">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Place</th>
+                                                    <th scope="col">Team</th>
+                                                    <th scope="col" class="text-center">Deals</th>
+                                                    <th scope="col" class="text-center">Installs</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="wt" scope="row">1</th>
+                                                    <td>
+                                                        <div class="td-content customer-name">
+                                                            <img src="img/emily-taylor.jpg" alt="">
+                                                            <span>Emily Taylor</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="wt120 text-center">30</td>
+                                                    <td class="wt text-center ch">23</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>
+                                                        <div class="td-content customer-name">
+                                                            <img src="img/emily-taylor.jpg" alt="">
+                                                            <span>Jonah Hills</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">22</td>
+                                                    <td class="text-center ch">20</td>
+                                                </tr>
+
+                                                <tr class="table-active">
+                                                    <th scope="row">3</th>
+                                                    <td>
+                                                        <div class="td-content customer-name">
+                                                            <img src="img/emily-taylor.jpg" alt="">
+                                                            <span>Janice Williams</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">21</td>
+                                                    <td class="text-center ch">19</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">8</th>
+                                                    <td>
+                                                        <div class="td-content customer-name">
+                                                            <img src="img/emily-taylor.jpg" alt="">
+                                                            <span>Alex Smith (You)</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">16</td>
+                                                    <td class="text-center ch">12</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="our-item">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Place</th>
+                                                    <th scope="col">Team</th>
+                                                    <th scope="col" class="text-center">Deals</th>
+                                                    <th scope="col" class="text-center">Installs</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="wt" scope="row">1</th>
+                                                    <td>
+                                                        <div class="td-content customer-name">
+                                                            <img src="img/emily-taylor.jpg" alt="">
+                                                            <span>Emily Taylor</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="wt120 text-center">30</td>
+                                                    <td class="wt text-center ch">23</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>
+                                                        <div class="td-content customer-name">
+                                                            <img src="img/emily-taylor.jpg" alt="">
+                                                            <span>Jonah Hills</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">22</td>
+                                                    <td class="text-center ch">20</td>
+                                                </tr>
+
+                                                <tr class="table-active">
+                                                    <th scope="row">3</th>
+                                                    <td>
+                                                        <div class="td-content customer-name">
+                                                            <img src="img/emily-taylor.jpg" alt="">
+                                                            <span>Janice Williams</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">21</td>
+                                                    <td class="text-center ch">19</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">8</th>
+                                                    <td>
+                                                        <div class="td-content customer-name">
+                                                            <img src="img/emily-taylor.jpg" alt="">
+                                                            <span>Alex Smith (You)</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center">16</td>
+                                                    <td class="text-center ch">12</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="dash_widget hgg">
+                        <div class="block">
+                            <div class="box">
+                                <p class="number">
+                                    <span class="num">480</span>
+                                    <span class="sub">/</span>
+                                    <span class="sub">600</span>
+                                </p>
+                            </div>
+                            <svg class="svg">
+                                <defs>
+                                    <linearGradient id="gradientStyle">
+                                        <stop offset="0%" stop-color="#565656" />
+                                        <stop offset="100%" stop-color="#b7b5b5" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="circle" cx="90" cy="90" r="80" rx="20" />
+                            </svg>
+                        </div>
+
+                        <h4>Company Goal
+                            <span>Clean Deals</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="cultur_te">
+                        <h4>Spartan Culture</h4>
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4">
+                                <div class="qa_box">
+                                    <div class="qa_img">
+                                        <img src="img/q4.jpg" alt="">
+                                    </div>
+                                    <h3>Q4 Earn It All Training</h3>
+                                    <p>October 1 - Janurary 1</p>
+                                    <a href="#">See More</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-4">
+                                <div class="qa_box">
+                                    <div class="qa_img">
+                                        <img src="img/optimus.jpg" alt="">
+                                    </div>
+                                    <h3>Optimus Dashboard 2.0g</h3>
+                                    <p>Coming September 31</p>
+                                    <!-- <a href="#">See More</a> -->
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-4">
+                                <div class="qa_box">
+                                    <div class="qa_img">
+                                        <img src="img/ego.png" alt="">
+                                    </div>
+                                    <h3>Ego is the Enemy</h3>
+                                    <p>Ryan Holiday</p>
+                                    <a href="#">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="cultur_te">
+                        <h4>Spartan Swag - New Arrivals</h4>
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4">
+                                <div class="qa_box">
+                                    <div class="qa_img">
+                                        <img src="img/speed-trust.jpg" alt="">
+                                    </div>
+                                    <h3>Speed & Trust Hat</h3>
+                                    <span>$25</span>
+                                    <a href="#">See More</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-4">
+                                <div class="qa_box">
+                                    <div class="qa_img">
+                                        <img src="img/athletic-jogger.jpg" alt="">
+                                    </div>
+                                    <h3>Athletic Jogger</h3>
+                                    <span>$40</span>
+                                    <a href="#">See More</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-4">
+                                <div class="qa_box">
+                                    <div class="qa_img">
+                                        <img src="img/athletic-jogger.jpg" alt="">
+                                    </div>
+                                    <h3>Spartan Army Tank</h3>
+                                    <span>$28</span>
+                                    <a href="#">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script>
+        $('.Table').owlCarousel({
+            loop: true,
+            nav: false,
+            dots: true,
+            smartSpeed: 2000,
+            margin: 10,
+            autoplayHoverPause: false,
+            autoplay: false,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                576: {
+                    items: 1,
+                },
+                768: {
+                    items: 1
+                },
+                1024: {
+                    items: 1
+                },
+                1200: {
+                    items: 1
+                }
+            }
+        });
+    </script>
+
+    <script>
+        const defaultData = 'https://demo-live-data.highcharts.com/time-data.csv';
+        const urlInput = document.getElementById('fetchURL');
+        const pollingCheckbox = document.getElementById('enablePolling');
+        const pollingInput = document.getElementById('pollingTime');
+
+        function createChart() {
+            Highcharts.chart('container', {
+
+
+                accessibility: {
+                    announceNewData: {
+                        enabled: true,
+                        minAnnounceInterval: 15000,
+                        announcementFormatter: function (
+                            allSeries,
+                            newSeries,
+                            newPoint) {
+                            if (newPoint) {
+                                return 'New point added. Value: ' + newPoint.y;
+                            }
+                            return false;
+                        }
+                    }
+                },
+                plotOptions: {
+                    areaspline: {
+                        color: '#32CD32',
+                        fillColor: {
+                            linearGradient: { x1: 0, x2: 0, y1: 0, y2: 1 },
+                            stops: [
+                                [0, '#32CD32'],
+                                [1, '#32CD3200']
+                            ]
+                        },
+                        threshold: null,
+                        marker: {
+                            lineWidth: 1,
+                            lineColor: null,
+                            fillColor: 'white'
+                        }
+                    }
+                },
+                data: {
+                    csvURL: urlInput.value,
+                    enablePolling: pollingCheckbox.checked === true,
+                    dataRefreshRate: parseInt(pollingInput.value, 10)
+                }
+            });
+
+            if (pollingInput.value < 1 || !pollingInput.value) {
+                pollingInput.value = 1;
+            }
+        }
+
+        urlInput.value = defaultData;
+        pollingCheckbox.onchange = urlInput.onchange =
+            pollingInput.onchange = createChart;
+
+        // Create the chart
+        createChart();
+
+
+    </script>
+
+    <script>
+        const block = document.querySelectorAll('.block');
+        window.addEventListener('load', function () {
+            block.forEach(item => {
+                let numElement = item.querySelector('.num');
+                let num = parseInt(numElement.innerText);
+                let count = 0;
+                let time = 2000 / num;
+                let circle = item.querySelector('.circle');
+                setInterval(() => {
+                    if (count == num) {
+                        clearInterval();
+                    } else {
+                        count += 1;
+                        numElement.innerText = count;
+                    }
+                }, time)
+                circle.style.strokeDashoffset
+                    = 503 - (503 * (num / 100));
+                let dots = item.querySelector('.dots');
+                dots.style.transform =
+                    `rotate(${360 * (num / 100)}deg)`;
+                if (num == 100) {
+                    dots.style.opacity = 0;
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>
